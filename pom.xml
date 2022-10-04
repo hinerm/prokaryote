@@ -189,10 +189,6 @@
             <!-- Exclusion list cribbed from https://github.com/glencoesoftware/omero-ms-core/blob/master/build.gradle -->
             <exclusions>
                 <exclusion>
-                    <groupId>net.jcip</groupId>
-                    <artifactId>jcip-annotations</artifactId>
-                </exclusion>
-                <exclusion>
                     <groupId>antlr</groupId>
                     <artifactId>antlr</artifactId>
                 </exclusion>
@@ -218,7 +214,27 @@
                 </exclusion>
                 <exclusion>
                     <groupId>com.codahale.metrics</groupId>
-                    <artifactId>*</artifactId>
+                    <artifactId>metrics-graphite</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.codahale.metrics</groupId>
+                    <artifactId>metrics-jvm</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.codahale.metrics</groupId>
+                    <artifactId>metrics-logback</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.drewnoakes</groupId>
+                    <artifactId>metadata-extractor</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.esotericsoftware</groupId>
+                    <artifactId>kryo</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.google.guava</groupId>
+                    <artifactId>guava</artifactId>
                 </exclusion>
                 <exclusion>
                     <groupId>com.jamonapi</groupId>
@@ -301,10 +317,6 @@
                     <artifactId>java-getopt</artifactId>
                 </exclusion>
                 <exclusion>
-                    <groupId>hsqldb</groupId>
-                    <artifactId>hsqldb</artifactId>
-                </exclusion>
-                <exclusion>
                     <groupId>javassist</groupId>
                     <artifactId>javassist</artifactId>
                 </exclusion>
@@ -325,8 +337,24 @@
                     <artifactId>formats-gpl</artifactId>
                 </exclusion>
                 <exclusion>
-                    <groupId>org.apache.lucene</groupId>
-                    <artifactId>*</artifactId>
+                    <groupId>ome</groupId>
+                    <artifactId>jai_imageio</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>ome</groupId>
+                    <artifactId>lwf-stubs</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>ome</groupId>
+                    <artifactId>turbojpeg</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>omero</groupId>
+                    <artifactId>dsl</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>omero</groupId>
+                    <artifactId>omero-shares</artifactId>
                 </exclusion>
                 <exclusion>
                     <groupId>org.apache.httpcomponents</groupId>
@@ -347,7 +375,7 @@
                 </exclusion>
                 <exclusion>
                     <groupId>org.hibernate</groupId>
-                    <artifactId>*</artifactId>
+                    <artifactId>hibernate-search</artifactId>
                 </exclusion>
                 <!-- The following is defined independently due to the SciJava
                      org.scijava.maven.plugin.enforcer.BanDuplicateClasses
@@ -366,8 +394,33 @@
                     <artifactId>ini4j</artifactId>
                 </exclusion>
                 <exclusion>
-                    <groupId>org.postgresql</groupId>
-                    <artifactId>postgresql</artifactId>
+                    <groupId>org.subethamail</groupId>
+                    <artifactId>subethasmtp</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>pdfbox</groupId>
+                    <artifactId>pdfbox</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>quartz</groupId>
+                    <artifactId>quartz</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>xerces</groupId>
+                    <artifactId>xercesImpl</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>xml-apis</groupId>
+                    <artifactId>xml-apis</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>zeroc</groupId>
+                    <artifactId>ice-db</artifactId>
+                </exclusion>
+		<!-- Additional necessary exclusions -->
+                <exclusion>
+                    <groupId>net.jcip</groupId>
+                    <artifactId>jcip-annotations</artifactId>
                 </exclusion>
                 <exclusion>
                     <groupId>org.springframework</groupId>
@@ -391,31 +444,7 @@
                 </exclusion>
                 <exclusion>
                     <groupId>org.springframework.security</groupId>
-                    <artifactId>*</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.subethamail</groupId>
-                    <artifactId>subethasmtp</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>pdfbox</groupId>
-                    <artifactId>pdfbox</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>quartz</groupId>
-                    <artifactId>quartz</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>xerces</groupId>
-                    <artifactId>xercesImpl</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>xml-apis</groupId>
-                    <artifactId>*</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>zeroc</groupId>
-                    <artifactId>ice-db</artifactId>
+                    <artifactId>spring-security-ldap</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
